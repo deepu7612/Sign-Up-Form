@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Addmission Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI0sdsomxPXcriteAFc0ke5HU_NOOZMxRpKPgBxnBbB9XnMdCu-huDMy4YAB1UmtNOvQY&usqp=CAU);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .wrapper {
+            width: 420px;
+            background-color: transparent;
+            color: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            border: 2px solid rgba(255, 255, 255, .6);
+            backdrop-filter: blur(20px);
+
+        }
+
+        .wrapper:hover {
+            box-shadow: 2px 2px 50px white;
+            transition: 0.3s;
+        }
+
+        .wrapper h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .wrapper h1:hover {
+            text-shadow: 2px 2px 5px black, 0 0 255 blue, 0 0 5 darkblue;
+        }
+
+        .wrapper .input-box {
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+            font-size: 20px;
+            position: relative;
+
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .3);
+            border-radius: 40px;
+            font-size: 16px;
+            padding: 20px 45px 20px 20px;
+            color: white;
+
+        }
+
+        .input-box input:hover {
+            box-shadow: 2px 2px 50px blue;
+        }
+
+        .input-box input:hover {
+            border: 2px solid white;
+        }
+
+        .input-box input::placeholder {
+            color: white;
+
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            float: right;
+        }
+
+        .wrapper .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            margin: 15px;
+        }
+
+        .remember-forgot a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .remember-forgot a:hover {
+            text-decoration: underline;
+        }
+
+        .wrapper .btn {
+            height: 45px;
+            width: 100%;
+            border-radius: 30px;
+            font-size: 16px;
+
+        }
+
+        .wrapper .btn:hover {
+            color: white;
+            background-color: rgb(47, 47, 169);
+            font-weight: bold;
+            transition: 0.2s;
+            border: none;
+            box-shadow: 2px 2px 25px white;
+            cursor: pointer;
+        }
+
+        .register-link {
+            text-align: center;
+            padding: 10px;
+            font-size: large;
+        }
+
+        .register-link a {
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+ 
+
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="Password" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="remember-forgot">
+                <label for="">
+                    <input type="checkbox">Remember me
+                </label>
+                <a href="#">Forgot Password</a>
+            </div>
+            <button type="button" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+   
+
+</body>
+
+</html>
